@@ -9,4 +9,4 @@ Para pesquisar por pacotes:
 aurman -Ss
 
 Para instalar:
-aurman -S
+aurman -S  mintstick-git --noconfirm 
