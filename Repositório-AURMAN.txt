@@ -1,0 +1,15 @@
+INSTALAR AURMAN
+# Baixe os arquvips usando a seguinte linha de comando:
+git clone https://aur.archlinux.org/aurman.git 
+
+# Entre no directorio para compilá-lo
+cd aurman 
+gpg --keyserver pgp.mit.edu --recv-keys 465022E743D71E39
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 465022E743D71E39
+makepkg -si
+====================================================================
+Para pesquisar por pacotes:
+aurman -Ss nome_do_pacote
+
+Para instalar pacotes (Irei baixar o Formatador de dispositivos como exemplo)
+aurman -S mintstick-git 
