@@ -1,9 +1,9 @@
 # pos_arch
 Pós instalação do Arch Linux com interface gráfica XFCE
-Faça o downlaod do script e então dê permissão usando a seguinte linha de comando:
+Faça o download do script e então dê permissão usando a seguinte linha de comando:
 sudo chmod +x pos_arch.sh
 Logo em seguida execute-o:
-bash ./pos_arch.sh
+sudo ./pos_arch.sh
 
 ----------------------------------------------------------------------------------
 Trago também um modelo de configuraçãoão  do servidor samba para Arch e seus derivados!
@@ -15,8 +15,7 @@ Depois copie o arquivo "smb.conf" para /etc/samba/
 
 Então crie uma pasta publica no /home:
 
-mkdir -m 775 /home/publico
-chgrp users /home/publico
+sudo mkdir -m 775 /home/publico && chgrp users /home/publico
 usermod -G nome_do_usuário
 
 Em seguinda, o logo em seguida é um usuário no SAMBA:
